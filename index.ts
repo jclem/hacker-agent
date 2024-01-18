@@ -64,6 +64,10 @@ Bun.serve({
     return new Response(
       new ReadableStream({
         async start(controller) {
+          stream.on("end", () => {
+            controller.close();
+          });
+
           stream.on("chunk", (chunk) =>
             controller.enqueue(`data: ${JSON.stringify(chunk)}\n\n`),
           );
