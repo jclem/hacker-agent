@@ -2,6 +2,19 @@
 
 ## Development
 
+Install Prerequsites:
+
+#### Bun 
+
+[Installation instructions](https://bun.sh/)
+
+#### Flyctl 
+
+[Installation instructions](https://fly.io/docs/hands-on/install-flyctl/)
+
+[Fly.io signup](https://fly.io/docs/hands-on/sign-up-sign-in/)
+
+
 Install dependencies:
 
 ```bash
@@ -24,6 +37,8 @@ bun dev
 ## Deployment
 
 Create a Fly.io app:
+Install flyctl following steps here
+
 
 ```bash
 fly launch
